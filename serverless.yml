@@ -1,0 +1,12 @@
+service: elephant-fact-skill
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: eu-west-1
+
+functions:
+  elephant-fact-handler:
+    handler: index.handler
+    name: elephant-fact-handler
+    events:
+      - alexaSkill
